@@ -51,8 +51,7 @@ import pendulum
 import logging
 
 
-username = "user002" # Enter your username here
-bucket_name = "eastbucket-" + username
+username = "user001" # Enter your username here
 dag_name = "BankFraudHol-"+username
 
 print("Using DAG Name: {}".format(dag_name))
@@ -109,4 +108,4 @@ end = DummyOperator(
         dag=dag
 )
 
-start >> read_conf >> taskgroup >> bronze >> silver >> gold >> github_list_repos >> end
+start >> bronze >> silver >> gold >> github_list_repos >> end
