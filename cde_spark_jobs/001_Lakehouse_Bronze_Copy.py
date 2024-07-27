@@ -155,7 +155,7 @@ trxBatchDf = castMultipleColumns(trxBatchDf, cols)
 trxBatchDf = trxBatchDf.withColumn("event_ts", trxBatchDf["event_ts"].cast("timestamp"))
 
 # CREATE TABLE BRANC
-spark.sql("ALTER TABLE HIST_TRX_{} CREATE BRANCH ingestion_branch".format(username))
+spark.sql("ALTER TABLE SPARK_CATALOG.HOL_DB_{0}.HIST_TRX_{0} CREATE BRANCH ingestion_branch".format(username))
 
 # WRITE DATA OPERATION ON TABLE BRANCH
-trxBatchDf.write.format("iceberg").option("branch", "ingestion_branch").mode("append").save("HIST_TRX_{}".format(username))
+trxBatchDf.write.format("iceberg").option("branch", "ingestion_branch").mode("append").save("SPARK_CATALOG.HOL_DB_{0}.HIST_TRX_{0}".format(username))
