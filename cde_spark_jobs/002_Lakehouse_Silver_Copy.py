@@ -63,7 +63,7 @@ print("PySpark Runtime Arg: ", sys.argv[1])
 #---------------------------------------------------
 
 ### TRANSACTIONS FACT TABLE
-branchDf = spark.sql("SELECT * FROM SPARK_CATALOG.HOL_DB_{0}.HIST_TRX_{0} VERSION AS OF 'ingestion_branch';".format(username)).show()
+branchDf = spark.sql("SELECT * FROM SPARK_CATALOG.HOL_DB_{0}.HIST_TRX_{0} VERSION AS OF 'ingestion_branch';".format(username))
 
 ### TRX DF SCHEMA BEFORE CASTING
 branchDf.printSchema()
