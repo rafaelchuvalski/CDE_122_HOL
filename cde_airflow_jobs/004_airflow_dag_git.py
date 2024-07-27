@@ -53,6 +53,7 @@ import logging
 
 username = "user001" # Enter your username here
 dag_name = "BankFraudHol-"+username
+logger = logging.getLogger(__name__)
 
 print("Using DAG Name: {}".format(dag_name))
 
