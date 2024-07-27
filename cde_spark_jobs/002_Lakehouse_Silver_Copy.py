@@ -95,10 +95,10 @@ assert geTrxBatchDfValidation.success, \
 spark.sql("""SELECT COUNT(*) FROM SPARK_CATALOG.HOL_DB_{0}.HIST_TRX_{0}""".format(username)).show()
 
 ### APPEND OPERATION
-trxBatchDf.write.format("iceberg").mode("append").save("SPARK_CATALOG.HOL_DB_{0}.HIST_TRX_{0}".format(username))
+#branchDf.write.format("iceberg").mode("append").save("SPARK_CATALOG.HOL_DB_{0}.HIST_TRX_{0}".format(username))
 
 ### POST-MERGE COUNT:
-spark.sql("""SELECT COUNT(*) FROM SPARK_CATALOG.HOL_DB_{0}.HIST_TRX_{0}""".format(username)).show()
+#spark.sql("""SELECT COUNT(*) FROM SPARK_CATALOG.HOL_DB_{0}.HIST_TRX_{0}""".format(username)).show()
 
 ### MERGE INGESTION BRANCH INTO MAIN TABLE BRANCH
 
