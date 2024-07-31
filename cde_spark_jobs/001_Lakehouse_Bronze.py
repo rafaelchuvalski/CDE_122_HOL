@@ -137,3 +137,25 @@ transactionsDf.writeTo("SPARK_CATALOG.HOL_DB_{0}.HIST_TRX_{0}".format(username))
 
 print("COUNT OF TRANSACTIONS TABLE")
 spark.sql("SELECT COUNT(*) FROM SPARK_CATALOG.HOL_DB_{0}.HIST_TRX_{0};".format(username)).show()
+
+
+#---------------------------------------------------
+#               CREATE TRANSACTIONS BRANCH
+#---------------------------------------------------
+
+### TRANSACTIONS FACT TABLE
+trxBatchDf = spark.read.json("{0}/mkthol/trans/{1}/trx_batch_2".format(storageLocation, username))
+
+### TRX DF SCHEMA BEFORE CASTING
+trxBatchDf.printSchema()
+
+### CAST TYPES
+cols = ["transaction_amount", "latitude", "longitude"]
+trxBatchDf = castMultipleColumns(trxBatchDf, cols)
+trxBatchDf = trxBatchDf.withColumn("event_ts", trxBatchDf["event_ts"].cast("timestamp"))
+
+# CREATE TABLE BRANC
+spark.sql("ALTER TABLE SPARK_CATALOG.HOL_DB_{0}.HIST_TRX_{0} CREATE BRANCH ingestion_branch".format(username))
+
+# WRITE DATA OPERATION ON TABLE BRANCH
+trxBatchDf.write.format("iceberg").option("branch", "ingestion_branch").mode("append").save("SPARK_CATALOG.HOL_DB_{0}.HIST_TRX_{0}".format(username))
