@@ -1,4 +1,4 @@
-# CDE Demo Auto Deploy
+# Automated Setup
 
 ## Objective
 
