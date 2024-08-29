@@ -21,7 +21,7 @@ Cette automatisation n'exécute pas le matériel de laboratoire réel. Ceux-ci s
 Pour déployer la démo via cette automatisation, vous avez besoin de :
 
 * Un locataire CDP dans le cloud public ou privé.
-* Un Utilisateur de Charge de Travail CDP avec des politiques Ranger et des Mappings IDBroker configurés en conséquence.
+* Un CDP Workload User avec des politiques Ranger et des Mappings IDBroker configurés en conséquence.
 * Un Service CDE en version 1.21 ou supérieure.
 * L'autorisation de Runtime Docker Personnalisé. Veuillez contacter l'équipe produit ou commerciale de CDE pour obtenir l'autorisation.
 * Un compte Dockerhub. Veuillez avoir votre utilisateur et mot de passe Dockerhub prêts.

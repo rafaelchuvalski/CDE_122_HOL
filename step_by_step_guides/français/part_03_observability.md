@@ -12,7 +12,7 @@ CDE propose une fonctionnalité d'observabilité des jobs intégrée, incluant u
 
 Cloudera Observability est un service Cloudera qui vous aide à comprendre de manière interactive votre environnement, vos services de données, vos charges de travail, vos clusters et vos ressources à travers tous les services de calcul dans un environnement CDP - ***y compris CDE***.
 
-Lorsque une charge de travail se termine, les informations de diagnostic sur le job ou la requête et le cluster qui les a traités sont collectées par Telemetry Publisher et envoyées à Cloudera Observability, afin que vous puissiez optimiser vos requêtes et pipelines grâce à :
+Lorsque une charge de job se termine, les informations de diagnostic sur le job ou la requête et le cluster qui les a traités sont collectées par Telemetry Publisher et envoyées à Cloudera Observability, afin que vous puissiez optimiser vos requêtes et pipelines grâce à :
 
 * Une large gamme de métriques et de tests de santé qui vous aident à identifier et résoudre à la fois les problèmes existants et potentiels.
 * Des conseils et des recommandations prescriptives qui vous aident à résoudre rapidement ces problèmes et à optimiser les solutions.
@@ -20,10 +20,10 @@ Lorsque une charge de travail se termine, les informations de diagnostic sur le 
 
 De plus, Cloudera Observability vous permet également de :
 
-* Afficher visuellement les coûts actuels et historiques de votre cluster de charge de travail, ce qui vous aide à planifier et prévoir les budgets, les environnements de charges de travail futurs, et à justifier les groupes et ressources utilisateur actuels.
+* Afficher visuellement les coûts actuels et historiques de votre cluster, ce qui vous aide à planifier et prévoir les budgets, les environnements de charges de job futurs, et à justifier les groupes et ressources utilisateur actuels.
 * Déclencher des actions en temps réel à travers les jobs et les requêtes, ce qui vous aide à prendre des mesures pour atténuer les problèmes potentiels.
-* Recevoir quotidiennement les statistiques de votre cluster par e-mail, ce qui vous aide à suivre, comparer et surveiller sans avoir à vous connecter au cluster.
-* Décomposer les métriques de votre charge de travail en vues plus significatives pour vos besoins commerciaux, ce qui vous aide à analyser des critères spécifiques de charge de travail. Par exemple, vous pouvez analyser comment les requêtes qui accèdent à une base de données particulière ou qui utilisent un pool de ressources spécifique performent par rapport à vos SLA. Ou vous pouvez examiner comment toutes les requêtes envoyées par un utilisateur spécifique performent sur votre cluster.
+* Recevoir quotidiennement les statistiques de votre cas d'utilisation par e-mail, ce qui vous aide à suivre, comparer et surveiller sans avoir à vous connecter au cluster.
+* Décomposer les métriques de votre cluster en vues plus significatives pour vos besoins commerciaux, ce qui vous aide à analyser des critères spécifiques de cas d'utilisation. Par exemple, vous pouvez analyser comment les requêtes qui accèdent à une base de données particulière ou qui utilisent un pool de ressources spécifique performent par rapport à vos SLA. Ou vous pouvez examiner comment toutes les requêtes envoyées par un utilisateur spécifique performent sur votre cluster.
 
 ##### Surveiller les Jobs dans CDE
 

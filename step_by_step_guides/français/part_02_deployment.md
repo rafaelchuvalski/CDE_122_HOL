@@ -127,7 +127,7 @@ Encore une fois, ***veuillez créer mais ne pas exécuter les jobs !***
 
 ### Laboratoire 4 : Orchestrer un pipeline Spark avec Airflow
 
-Dans ce laboratoire, vous allez construire un pipeline de Jobs Spark pour charger un nouveau lot de transactions, les joindre avec les données PII des clients, et créer une table des clients susceptibles d'être victimes de fraude par carte de crédit, y compris leur adresse e-mail et leur nom. L'ensemble du flux de travail sera orchestré par Apache Airflow.
+Dans ce laboratoire, vous allez construire un pipeline de Jobs Spark pour charger un nouveau lot de transactions, les joindre avec les données PII des clients, et créer une table des clients susceptibles d'être victimes de fraude par carte de crédit, y compris leur adresse e-mail et leur nom. L'ensemble du flux de donnés sera orchestré par Apache Airflow.
 
 ### Introduction brève à Airflow
 
