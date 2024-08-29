@@ -266,7 +266,7 @@ O data lakehouse no CDP simplifica a análise avançada em todos os dados com um
 
 Apache Iceberg é um formato de tabela aberto projetado para cargas de trabalho analíticos de grandes dimensões. Suporta evolução de esquema, particionamento oculto, evolução do layout de particionamento e time travel. Cada mudança na tabela cria um snapshot do Iceberg, o que ajuda a resolver problemas de concorrência e permite que os leitores examinem um estado estável da tabela sempre que necessário.
 
-Iceberg é bem adequado para uma variedade de casos de uso, incluindo Análise de Lakehouse, pipelines de Engenharia de Dados e conformidade normativa com aspectos específicos de regulamentações como GDPR (Regulamento Geral sobre a Proteção de Dados) e CCPA (California Consumer Privacy Act) que exigem a capacidade de eliminar dados de clientes sob demanda.
+Iceberg é bem adequado para uma variedade de casos de uso, incluindo Análise de Lakehouse, pipelines de Engenharia de Dados e conformidade normativa com aspectos específicos de regulamentações como LGPD (Lei Geral de Proteção de dados), GDPR (Regulamento Geral sobre a Proteção de Dados) e CCPA (California Consumer Privacy Act) que exigem a capacidade de eliminar dados de clientes sob demanda.
 
 Os Clusters Virtuais CDE fornecem suporte nativo para Iceberg. Os usuários podem executar cargas de trabalho Spark e interagir com suas tabelas Iceberg por meio de declarações SQL. O Nível de Metadados do Iceberg rastreia as versões da tabela Iceberg por meio de Snapshots e fornece Tabelas de Metadados com informações sobre snapshots e outras informações úteis. Neste Laboratório, usamos o Iceberg para acessar o dataset das transações com cartão de crédito em um timestamp específico.
 

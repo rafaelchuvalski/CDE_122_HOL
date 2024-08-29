@@ -20,10 +20,10 @@ Esta automação não executa o material real do laboratório. Estes são fácei
 
 Para implantar a demo por meio desta automação você precisa de:
 
-* Um locatário CDP em nuvem pública ou privada.
+* Um Tenant do CDP em nuvem pública ou privada.
 * Um Usuário de Workload CDP com políticas Ranger e Mappings de IDBroker configurados de acordo.
 * Um Serviço CDE na versão 1.21 ou superior.
-* O direito de uso do Runtime Docker Personalizado. Por favor, entre em contato com a equipe de produto ou vendas da CDE para obter o direito.
+* O entitlement de uso do Runtime Docker Personalizado. Por favor, entre em contato com a equipe de produto ou vendas da CDE para obter o entitlement.
 * Uma conta Dockerhub. Por favor, tenha pronto seu usuário e senha Dockerhub.
 
 ## Informações Importantes
